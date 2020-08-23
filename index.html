@@ -51,5 +51,20 @@
         </div>
     </div>
 
+
+    <script>
+        let overlay = document.querySelector('.overlay');
+        let submit = document.querySelector('.submit');
+        let close = document.querySelector(".close");
+
+        submit.addEventListener("click", ()=>{
+            overlay.classList.add("show");
+        });
+
+        close.addEventListener("click", ()=>{
+            overlay.classList.remove("show");
+        })
+    </script>
+
 </body>
 </html>
